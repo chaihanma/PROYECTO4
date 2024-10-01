@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Correo electrónico" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <div class="form-options">
+                <label>
+                    <input type="checkbox" id="rememberMe"> Recordarme
+                </label>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+        <div class="share-options">
+            <p>Comparte:</p>
+            <button onclick="shareOnSocialMedia('facebook')">Facebook</button>
+            <button onclick="shareOnSocialMedia('twitter')">Twitter</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
